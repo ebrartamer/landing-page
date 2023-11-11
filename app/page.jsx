@@ -39,7 +39,13 @@ export default function Home() {
               backgroundColor: "#FF68B5",
             }}
           ></div>
-          <svg viewBox="0 0 500 500" preserveAspectRatio="none">
+          <svg
+          style={
+            {
+              stroke: 'black',
+              strokeWidth: '3px',
+            }
+          } viewBox="0 0 500 500" preserveAspectRatio="none">
             <path
               d="M 0 30  C 200 100 280 0 500 30 L 1500 0 L 0 0 Z "
               fill="#FF68B5"

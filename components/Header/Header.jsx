@@ -19,8 +19,7 @@ const Header = () => {
     <div
       className="bg-pink-1 absolute top-0 left-0 w-auto h-[60vh] px-10 pt-10 "
       style={{
-        stroke: 'black',
-        strokeWidth: '3px',
+        
         zIndex: "-1",
       }}
     >
@@ -76,14 +75,10 @@ const Header = () => {
 
       <div className="flex flex-row justify-around items-center ">
         <div
-          className="flex flex-row justify-around items-center w-[80%] rounded-[20px] drop-shadow-[4px_4px_rgba(0,0,0,1)]
-            "
-        >
+          className="flex flex-row justify-around items-center w-[80%] rounded-[20px] drop-shadow-[4px_4px_rgba(0,0,0,1)]">
           <button
             className={`bg-red-1 font-lexend drop-shadow-[4px_4px_rgba(0,0,0,1)] text-white rounded-[20px] p-4 px-12
-                hover:drop-shadow-none transition-all duration-200 ease-in-out
-            `}
-          >
+                hover:drop-shadow-none transition-all duration-200 ease-in-out`}>
             <p className="font-lexend drop-shadow-[2px_2px_rgba(0,0,0,1)] text-2xl">
               Question
             </p>
