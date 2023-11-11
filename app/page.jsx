@@ -43,7 +43,8 @@ export default function Home() {
           style={
             {
               stroke: 'black',
-              strokeWidth: '3px',
+              strokeWidth: '2px',
+              fillOpacity: '1',
             }
           } viewBox="0 0 500 500" preserveAspectRatio="none">
             <path
@@ -86,6 +87,14 @@ export default function Home() {
 
       <section>
         <div className="mt-[40vh]">
+        <Wave 
+          top={"370vh"}
+          backgroundColor={"#C550F7"}
+  />
+          <Wave 
+          top={"530vh"}
+          backgroundColor={"#69D3E8"}
+  />
           <Animation>
             <Download />
           </Animation>
@@ -148,7 +157,10 @@ export default function Home() {
               transform: "rotate(180deg)",
             }}
           >
-            <svg viewBox="0 0 500 500" preserveAspectRatio="none">
+            <svg
+            stroke="black"
+            strokeWidth="1px"
+            viewBox="0 0 500 500" preserveAspectRatio="none">
               <path
                 d="M 0 30  C 200 100 280 0 500 30 L 500 0 L 0 0 Z "
                 fill="#FF68B5"

@@ -258,7 +258,7 @@ const Play = () => {
             }}
           >
             <div className="flex flex-row items-center justify-center">
-              <div className="h-1 w-[20vw] bg-black">c</div>
+              <div className="h-1 w-[20vw] bg-black"></div>
               <div
                 className={`bg-pink-1 rounded-full w-[8vw] h-[16vh] flex justify-center items-center border border-black border-b-4 border-r-4 my-10 hover:border-none transition-all duration-300 ease-in-out`}
               >

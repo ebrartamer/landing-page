@@ -17,10 +17,9 @@ const Header = () => {
 
   return (
     <div
-      className="bg-pink-1 absolute top-0 left-0 w-auto h-[60vh] px-10 pt-10 "
+      className="bg-pink-1 absolute top-0 left-0 w-auto h-[90vh] px-10  "
       style={{
-        
-        zIndex: "-1",
+        zIndex: "10",
       }}
     >
       <div className="flex justify-center  ">
@@ -38,7 +37,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex justify-around pt-20 pl-20">
+      <div className="flex justify-around pt-4 pl-20">
         <div className="w-2/3 h-auto flex justify-start items-center">
           <p
             style={{
