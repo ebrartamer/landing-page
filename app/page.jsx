@@ -70,7 +70,7 @@ export default function Home() {
         <div className="mt-[40vh]   w-auto">
           <Wave 
           top={"200vh"}
-          backgroundColor={"blue"}
+          backgroundColor={"#FF6B6B"}
   />
             <Animation>
             <Slider />
@@ -97,6 +97,7 @@ export default function Home() {
 
       <section>
         <div className="mt-[20vh]">
+
           <Animation>
             <Play />
           </Animation>

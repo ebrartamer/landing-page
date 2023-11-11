@@ -8,6 +8,7 @@ import "swiper/css";
 import Image from "next/image";
 
 const Partners = ({ data }) => {
+  
   return (
     <div>
       <div className="flex flex-col justify-center items-center text-shadow ">
@@ -50,41 +51,74 @@ const Partners = ({ data }) => {
         <SwiperSlide className="flex justify-center items-center">
           <div
             className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
-          drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
           >
-            <Image src={"/images/image12.png"} width={150} height={150} />
+            <Image src={"/images/beyaz.png"} width={150} height={150} />
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center items-center">
           <div
             className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
-          drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
           >
-            <Image src={"/images/image13.png"} width={150} height={150} />
+            <Image src={"/images/castrumB.jpg"} width={150} height={150} />
+          </div>
+        </SwiperSlide>
+        
+        <SwiperSlide className="flex justify-center items-center">
+          <div
+            className={`bg-black flex justify-center items-center h-[10vh] w-[20vw]
+          border-2 border-black  transition-all duration-200 ease-in-out
+          rounded-[20px] hover:drop-shadow-none `}
+          >
+            <Image className="p-3" src={"/images/cryptops2.png"} width={150} height={150} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center items-center">
+          <div
+            className={`bg-purple-2 flex justify-center items-center h-[10vh] w-[20vw]
+          border-2 border-black  transition-all duration-200 ease-in-out
+          rounded-[20px] hover:drop-shadow-none`}
+          >
+            <Image src={"/images/mor.png"} width={150} height={150} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center items-center">
+          <div
+            className={`bg-black flex justify-center items-center h-[10vh] w-[20vw]
+          border-2 border-black  transition-all duration-200 ease-in-out
+          rounded-[20px] hover:drop-shadow-none`}
+          >
+            <Image src={"/images/castrumSjpg.jpg"} width={150} height={150} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center items-center">
+          <div
+            className={`bg-black flex justify-center items-center h-[10vh] w-[20vw]
+          border-2 border-black  transition-all duration-200 ease-in-out
+          rounded-[20px] hover:drop-shadow-none`}
+          >
+            <Image src={"/images/coinvestor-light.png"} width={150} height={150} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center items-center">
+          <div
+            className={`bg-black flex justify-center items-center h-[10vh] w-[20vw]
+          border-2 border-black  transition-all duration-200 ease-in-out
+          rounded-[20px] hover:drop-shadow-none`}
+          >
+            <Image src={"/images/siyah.png"} width={150} height={150} />
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center items-center">
           <div
             className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
-          drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
           >
-            <Image src={"/images/image14.png"} width={150} height={150} />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center items-center">
-          <div
-            className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
-          drop-shadow-[6px_6px_rgba(0,0,0,1)]
-          border-2 border-black  transition-all duration-200 ease-in-out
-          rounded-[20px] hover:drop-shadow-none`}
-          >
-            <Image src={"/images/image15.png"} width={150} height={150} />
+            <Image src={"/images/coinvestor.png"} width={150} height={150} />
           </div>
         </SwiperSlide>
       </Swiper>

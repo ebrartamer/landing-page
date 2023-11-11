@@ -19,6 +19,8 @@ const Header = () => {
     <div
       className="bg-pink-1 absolute top-0 left-0 w-auto h-[60vh] px-10 pt-10 "
       style={{
+        stroke: 'black',
+        strokeWidth: '3px',
         zIndex: "-1",
       }}
     >
