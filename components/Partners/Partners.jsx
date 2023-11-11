@@ -78,15 +78,7 @@ const Partners = ({ data }) => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="flex justify-center items-center">
-          <div
-            className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
-          border-2 border-black  transition-all duration-200 ease-in-out
-          rounded-[20px] hover:drop-shadow-none`}
-          >
-            <Image src={"/images/binance.png"} width={150} height={150} />
-          </div>
-        </SwiperSlide>
+        
 
         <SwiperSlide className="flex justify-center items-center">
           <div
