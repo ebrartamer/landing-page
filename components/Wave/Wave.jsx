@@ -1,7 +1,6 @@
 import React from "react";
 
 const Wave = ({ top, backgroundColor }) => {
-  console.log(backgroundColor)
   return (
     <div
       style={{
@@ -13,11 +12,11 @@ const Wave = ({ top, backgroundColor }) => {
         zIndex: "-1",
       }}>
       <div
+      className="md:top-[190vh] top-[160vh]"
         style={{
           position: "absolute",
           width: "100%",
           height: "90%",
-          top: "190vh",
           left: "0",
           zIndex: "10",
         }}>
@@ -44,6 +43,7 @@ const Wave = ({ top, backgroundColor }) => {
           ></path>
         </svg> */}
         <div
+        className="md:top-0 -top-56"
           style={{
             position: "absolute",
             width: "100%",
@@ -51,8 +51,6 @@ const Wave = ({ top, backgroundColor }) => {
 
             left: "0",
             zIndex: "-1",
-
-            top: "0vh",
             rotate: "180deg",
           }}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

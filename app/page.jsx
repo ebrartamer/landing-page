@@ -81,7 +81,7 @@ export default function Home() {
       <section>
         <div className="mt-[40vh]">
         <Wave 
-          top={"370vh"}
+          top={"370vh "}
           backgroundColor={"#C550F7"}
   />
           <Wave 

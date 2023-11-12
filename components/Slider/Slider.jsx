@@ -2,13 +2,15 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import useWindowSize from "@/hooks/useWindowSize";
 // Import Swiper styles
 import "swiper/css";
 
 const Slider = ({ data }) => {
+  const windowSize = useWindowSize();
   return (
     <Swiper
-      slidesPerView={3.4}
+      slidesPerView={windowSize.width > 768 ? 3.2 : 2.1}
       //onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
       pagination={{
@@ -47,43 +49,43 @@ const Slider = ({ data }) => {
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
         >
-          <p className="text-center text-white  text-shadow font-lexend font-bold text-2xl">
+          <p className="text-center text-white  text-shadow font-lexend font-bold md:text-2xl">
             SCALABLE
           </p>
         </div>
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
         <div
-          className={`bg-blue-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[30vw] mr-5
+          className={`bg-blue-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[40vw] mr-5
           drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
         >
-          <p className="text-center text-white  text-shadow font-lexend font-bold text-2xl">
+          <p className="text-center text-white  text-shadow font-lexend font-bold md:text-2xl">
             EASY ADAPTATION FOR WEB2 USERS
           </p>
         </div>
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
         <div
-          className={`bg-purple-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[30vw] mr-5
+          className={`bg-purple-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[40vw] mr-5
           drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
         >
-          <p className="text-center text-white  text-shadow font-lexend font-bold text-2xl">
+          <p className="text-center text-white  text-shadow font-lexend font-bold md:text-2xl">
             EASY ADAPTATION FOR WEB2 PLATFORMS
           </p>
         </div>
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
         <div
-          className={`bg-pink-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[30vw] mr-5
+          className={`bg-pink-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[40vw] mr-5
           drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
         >
-          <p className="text-center text-white  text-shadow font-lexend font-bold text-2xl">
+          <p className="text-center text-white  text-shadow font-lexend font-bold md:text-2xl">
             EASY ADAPTATION FOR WEB2 PLATFORMS
           </p>
         </div>
@@ -91,12 +93,12 @@ const Slider = ({ data }) => {
 
       <SwiperSlide className="flex justify-center items-center">
         <div
-          className={`bg-red-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[30vw] mr-5
+          className={`bg-red-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[40vw] mr-5
           drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
         >
-          <p className="text-center text-white  text-shadow font-lexend font-bold text-2xl">
+          <p className="text-center text-white  text-shadow font-lexend font-bold md:text-2xl">
             SCALABLE
           </p>
         </div>
