@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function RootLayout({ children }) {
   return (
@@ -11,8 +12,10 @@ export default function RootLayout({ children }) {
         className=" w-[100vw] min-h-screen md:px-5"
         style={{ backgroundColor: "#F4D839", overflowX: "hidden" }}
       >
-        <div className=" md:px-20 w-full ">{children}</div>
+        <div className=" md:px-20 w-full ">{children}
+        <Analytics/></div>
       </body>
     </html>
+    
   );
 }

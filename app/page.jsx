@@ -59,7 +59,7 @@ export default function Home() {
       </div>
 
       <section>
-        <div className="md:mt-[120vh] mt-[50vh] w-full">
+        <div className="md:mt-[120vh] mt-[75vh] w-full">
           <Animation>
             <HomeComp />
           </Animation>

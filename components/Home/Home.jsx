@@ -25,14 +25,14 @@ const windowSize = useWindowSize();
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
-      <h1 className="text-center text-white text-shadow md:drop-shadow-[3px_3px_rgba(0,0,0,1)] font-lexend md:text-5xl text-4xl md:mb-20">
+    <div className="flex flex-col  justify-center items-center h-screen">
+      <h1 className="text-center  text-white text-shadow md:drop-shadow-[3px_3px_rgba(0,0,0,1)] font-lexend md:text-5xl text-2xl md:mb-20">
         Welcome On Board
       </h1>
-      <div className="bg-white border-black border-2 border-b-8 border-r-8 rounded-[40px] md:h-4/5 h-full w-full  md:mt-20 mt-96 flex md:flex-row flex-col ">
+      <div className="bg-white border-black border-2 md:border-b-8 md:border-r-8 rounded-[40px] md:h-4/5 h-full md:w-full w-auto md:mt-20 mt-28 mx-5 flex md:flex-row flex-col ">
         <div className="md:w-1/2 h-screen ">
           <div className="w-full justify-center items-center">
-            <p className="text-black font-lexend leading-10 font-bold md:p-16 md:text-lg order-last">
+            <p className="text-black font-lexend md:leading-10 leading-7 font-bold md:p-16 md:text-lg order-last p-8">
               Q&R is a Blockchain-powered Game-Fi platform that enables players
               to earn specific incomes according to their answers, activities,
               and creative ideas at different fictional functions. It is a
@@ -42,17 +42,17 @@ const windowSize = useWindowSize();
           </div>
           <div className="relative">
             <Image
-              className="absolute left-40 -top-16 z-10"
+              className="absolute md:left-40 left-20 md:-top-16 -top-12 z-10"
               src="/images/humans.png"
-              width={300}
-              height={300}
+              width={windowSize.width > 768 ? 300 : 280}
+              height={windowSize.height > 768 ? 300 : 280}
             />
           </div>
         </div>
         <div className="md:w-1/2 w-auto h-full order-first ">
           <div className="relative w-full">
             <Image
-              className={`absolute  md:right-20 right-52 ml-40 md:-top-0 -top-50 z-10 cursor-pointer md:image-with-shadow`}
+              className={`absolute  md:right-52  ml-40 md:-top-0 -top-50 z-10 cursor-pointer md:image-with-shadow`}
               src="/images/UserHomeMobile.png"
               width={windowSize.width > 768 ? 300 : 180}
               height={windowSize.height > 768 ? 300 : 180}
@@ -67,7 +67,7 @@ const windowSize = useWindowSize();
 
           <div className="relative ">
             <Image
-              className={`absolute md:right-80 md:-top-12  -top-48 z-10 cursor-pointer  image-with-shadow`}
+              className={`absolute md:right-80  md:-top-12  -top-48 z-10 cursor-pointer  image-with-shadow`}
               src="/images/QuizQuestionMobile.png"
               width={windowSize.width > 768 ? 300 : 180}
               height={windowSize.height > 768 ? 300 : 180}

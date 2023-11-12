@@ -42,7 +42,7 @@ const Slider = ({ data }) => {
       ))} */}
       <SwiperSlide className="flex justify-center items-center">
         <div
-          className={`bg-red-1 flex justify-center items-center h-[50vh] w-[20vw]
+          className={`bg-red-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[40vw]
           drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
@@ -54,7 +54,7 @@ const Slider = ({ data }) => {
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
         <div
-          className={`bg-blue-1 flex justify-center items-center h-[50vh] w-[20vw]
+          className={`bg-blue-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[30vw] mr-5
           drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
@@ -66,7 +66,7 @@ const Slider = ({ data }) => {
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
         <div
-          className={`bg-purple-1 flex justify-center items-center h-[50vh] w-[20vw]
+          className={`bg-purple-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[30vw] mr-5
           drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
@@ -78,7 +78,7 @@ const Slider = ({ data }) => {
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
         <div
-          className={`bg-pink-1 flex justify-center items-center h-[50vh] w-[20vw]
+          className={`bg-pink-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[30vw] mr-5
           drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
@@ -91,7 +91,7 @@ const Slider = ({ data }) => {
 
       <SwiperSlide className="flex justify-center items-center">
         <div
-          className={`bg-red-1 flex justify-center items-center h-[50vh] w-[20vw]
+          className={`bg-red-1 flex justify-center items-center md:h-[50vh] h-[25vh] md:w-[20vw] w-[30vw] mr-5
           drop-shadow-[6px_6px_rgba(0,0,0,1)]
           border-2 border-black  transition-all duration-200 ease-in-out
           rounded-[20px] hover:drop-shadow-none`}
