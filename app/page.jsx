@@ -4,7 +4,6 @@ import Header from "@/components/Header/Header";
 import HomeComp from "@/components/Home/Home";
 import Info from "@/components/Info/Info";
 import LeaderBoard from "@/components/LeaderBoard/LeaderBoard";
-import NFTs from "@/components/NFTs/NFTs";
 import Partners from "@/components/Partners/Partners";
 import Play from "@/components/Play/Play";
 import Slider from "@/components/Slider/Slider";
@@ -32,13 +31,7 @@ export default function Home() {
             zIndex: "-1",
           }}
         >
-          <div
-            style={{
-              width: "100%",
-              height: "80%",
-              backgroundColor: "#FF68B5",
-            }}
-          ></div>
+          <div className="w-full md:h-[80%] h-[54%] bg-[#FF68B5]"></div>
           <svg
           style={
             {
@@ -66,7 +59,7 @@ export default function Home() {
       </div>
 
       <section>
-        <div className="mt-[120vh] w-full">
+        <div className="md:mt-[120vh] mt-[50vh] w-full">
           <Animation>
             <HomeComp />
           </Animation>

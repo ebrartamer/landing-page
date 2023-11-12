@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import useWindowSize from "@/hooks/useWindowSize";
 import React, { useState } from "react";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     image2: { right: 100, top: 20 },
     image1: { right: 300, top: -40 },
   });
+const windowSize = useWindowSize(); 
 
   const handleClick = (image) => {
     // Toggle positions when an image is clicked
@@ -24,13 +26,13 @@ const Home = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <h1 className="text-center text-white text-shadow drop-shadow-[3px_3px_rgba(0,0,0,1)] font-lexend text-5xl mb-20">
+      <h1 className="text-center text-white text-shadow md:drop-shadow-[3px_3px_rgba(0,0,0,1)] font-lexend md:text-5xl text-4xl md:mb-20">
         Welcome On Board
       </h1>
-      <div className="bg-white border-black border-2 border-b-8 border-r-8 rounded-[40px] h-4/5 w-full mt-20 flex flex-row ">
-        <div className="w-1/2 h-full">
+      <div className="bg-white border-black border-2 border-b-8 border-r-8 rounded-[40px] md:h-4/5 h-full w-full  md:mt-20 mt-96 flex md:flex-row flex-col ">
+        <div className="md:w-1/2 h-screen ">
           <div className="w-full justify-center items-center">
-            <p className="text-black font-lexend leading-10 font-bold p-16 text-lg">
+            <p className="text-black font-lexend leading-10 font-bold md:p-16 md:text-lg order-last">
               Q&R is a Blockchain-powered Game-Fi platform that enables players
               to earn specific incomes according to their answers, activities,
               and creative ideas at different fictional functions. It is a
@@ -47,13 +49,13 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="w-1/2 h-full">
-          <div className="relative">
+        <div className="md:w-1/2 w-auto h-full order-first ">
+          <div className="relative w-full">
             <Image
-              className={`absolute  right-20 -top-0 z-10 cursor-pointer image-with-shadow`}
+              className={`absolute  md:right-20 right-52 ml-40 md:-top-0 -top-50 z-10 cursor-pointer md:image-with-shadow`}
               src="/images/UserHomeMobile.png"
-              width={280}
-              height={280}
+              width={windowSize.width > 768 ? 300 : 180}
+              height={windowSize.height > 768 ? 300 : 180}
               onClick={() => handleClick("image1")}
               style={{
                 right: `${imagePositions.image1.right}px`,
@@ -63,12 +65,12 @@ const Home = () => {
             />
           </div>
 
-          <div className="relative">
+          <div className="relative ">
             <Image
-              className={`absolute right-80 -top-12 z-10 cursor-pointer  image-with-shadow`}
+              className={`absolute md:right-80 md:-top-12  -top-48 z-10 cursor-pointer  image-with-shadow`}
               src="/images/QuizQuestionMobile.png"
-              width={280}
-              height={280}
+              width={windowSize.width > 768 ? 300 : 180}
+              height={windowSize.height > 768 ? 300 : 180}
               onClick={() => handleClick("image2")}
               style={{
                 right: `${imagePositions.image2.right}px`,

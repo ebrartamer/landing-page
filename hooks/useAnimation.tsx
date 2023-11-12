@@ -7,6 +7,7 @@ type UseAnimationProps = {
   controls?: AnimationControls
 }
 
+
 const useAnimation = ({
   delay = 0,
   duration = 0.3,
