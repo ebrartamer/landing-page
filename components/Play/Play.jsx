@@ -38,11 +38,11 @@ const Play = () => {
 
   return (
     <div className="flex-col ustify-center items-center flex mx-4  ">
-      <h1 className="text-white text-5xl text-shadow font-bold font-lexend drop-shadow-[2px_2px_rgba(0,0,0,1)] my-10">
+      <h1 className="text-white md:text-5xl text-2xl text-shadow font-bold font-lexend md:drop-shadow-[2px_2px_rgba(0,0,0,1)] md:my-10">
         How to play?{" "}
       </h1>
-      <div className="flex flex-col justify-around items-center">
-        <div className="relative flex flex-row justify-center items-center my-14">
+      <div className="flex flex-col justify-around items-center ">
+        <div className="relative flex flex-row justify-center items-center md:my-14 my-7 ">
           <Animation
             transition={{
               duration: 0.75,
@@ -59,7 +59,7 @@ const Play = () => {
               },
             }}
           >
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row items-center justify-center ">
               <div
                 className={`bg-blue-1 rounded-full md:w-[8vw] w-[24vw] md:h-[16vh] h-[12vh] flex justify-center items-center border border-black border-b-4 border-r-4 my-10 hover:border-none transition-all duration-300 ease-in-out
                   
@@ -107,7 +107,7 @@ const Play = () => {
           </Animation>
         </div>
 
-        <div className="relative flex flex-row justify-center items-center my-24">
+        <div className="relative flex flex-row justify-center items-center md:my-24">
           <Animation
             transition={{
               duration: 0.75,
@@ -164,7 +164,7 @@ const Play = () => {
           </Animation>
         </div>
 
-        <div className="relative flex flex-row justify-center items-center my-14">
+        <div className="relative flex flex-row justify-center items-center md:my-14 my-7">
           <Animation
             transition={{
               duration: 0.75,
@@ -221,7 +221,7 @@ const Play = () => {
           </Animation>
         </div>
 
-        <div className="relative flex flex-row justify-center items-center my-14">
+        <div className="relative flex flex-row justify-center items-center md:my-14 my-7">
           <Animation
             transition={{
               duration: 0.75,
@@ -238,15 +238,15 @@ const Play = () => {
               },
             }}
           >
-            <div className="bg-white border-2 md:w-[30vw] md:h-[30vh] flex justify-center items-center border-black border-b-4 border-r-4 rounded-[20px]">
+            <div className="bg-white border-2 md:w-[30vw] w-[60vw] md:h-[30vh] h-[20vh] flex justify-center items-center border-black border-b-4 border-r-4 rounded-[20px]">
               <p className="font-bold font-lexend text-black text-2xl leading-loose drop-shadow-[2px_2px_rgba(0,0,0,1) px-10">
                 Join the events.
               </p>
             </div>
-            <div className="absolute -left-12 top-12">
+            <div className="absolute md:-left-12 -left-8 md:top-12 top-12">
               <Image src="/images/Class.png" 
-              width={screenSize.width > 768 ? 200 : 80} 
-              height={screenSize.width > 768 ? 200 : 80} />
+              width={screenSize.width > 768 ? 200 : 150} 
+              height={screenSize.width > 768 ? 200 : 150} />
             </div>
           </Animation>
 
@@ -279,7 +279,7 @@ const Play = () => {
           </Animation>
         </div>
 
-        <div className="relative flex flex-row justify-center items-center my-14">
+        <div className="relative flex flex-row justify-center items-center md:my-14 my-7">
           <Animation
             transition={{
               duration: 0.75,
@@ -328,10 +328,10 @@ const Play = () => {
                 Have fun and Earn Income.
               </p>
             </div>
-            <div className="absolute -right-10 top-12">
+            <div className="absolute md:-right-10 -right-4 md:top-12 top-16">
               <Image src="/images/Feliz.png" 
-              width={screenSize.width > 768 ? 200 : 80} 
-              height={screenSize.width > 768 ? 200 : 80} />
+              width={screenSize.width > 768 ? 200 : 150} 
+              height={screenSize.width > 768 ? 200 : 150} />
             </div>
           </Animation>
         </div>

@@ -7,12 +7,14 @@ import LeaderBoard from "@/components/LeaderBoard/LeaderBoard";
 import Partners from "@/components/Partners/Partners";
 import Play from "@/components/Play/Play";
 import Slider from "@/components/Slider/Slider";
-
+import useWindowSize from "@/hooks/useWindowSize";
 import Animation from "@/components/Animation/Animation";
 
 import Wave from "@/components/Wave/Wave";
+import NFTs from "@/components/NFTs/NFTs";
 
 export default function Home() {
+  const useSize = useWindowSize();
   return (
     <div className=" w-full overflow-hidden">
       <div
@@ -69,7 +71,7 @@ export default function Home() {
       <section>
         <div className="mt-[40vh]   w-auto">
           <Wave 
-          top={"200vh"}
+          top={useSize.width > 768 ? "370vh" : "150vh"}
           backgroundColor={"#FF6B6B"}
   />
             <Animation>
@@ -79,13 +81,13 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="mt-[40vh]">
+        <div className="md:mt-[40vh] mt-[20vh]">
         <Wave 
-          top={"370vh "}
+          top={useSize.width > 768 ? "370vh" : "300vh"}
           backgroundColor={"#C550F7"}
   />
           <Wave 
-          top={"530vh"}
+          top={useSize.width > 768 ? "530vh" : "400vh"}
           backgroundColor={"#69D3E8"}
   />
           <Animation>
@@ -95,7 +97,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="mt-[40vh]">
+        <div className="md:mt-[40vh] mt-[25vh]">
           <Animation>
             {" "}
             <LeaderBoard />
@@ -120,13 +122,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section>
+      <section>
         <div className="mt-[20vh]">
           <Animation>
             <NFTs />
           </Animation>{" "}
         </div>
-      </section> */}
+      </section> 
 
       <section>
         <div className="mt-[10vh]">
@@ -137,13 +139,13 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="mt-[10vh]">
+        <div className="md:mt-[10vh] mt-0">
           <div
+          className="md:top-[960vh] top-[600vh] "
             style={{
               position: "absolute",
               width: "100%",
               height: "100%",
-              top: "860vh",
               left: "0",
               zIndex: "-1",
 

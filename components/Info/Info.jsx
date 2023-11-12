@@ -11,7 +11,7 @@ const Info = ({ data }) => {
 
         <div className="flex flex-col w-full h-full text-center">
             <div>
-                <h1 className="text-white text-shadow font-bold font-lexend text-5xl drop-shadow-[2px_2px_rgba(0,0,0,1)] mb-10">In Game Shoots</h1>
+                <h1 className="text-white text-shadow font-bold font-lexend md:text-5xl text-2xl md:drop-shadow-[2px_2px_rgba(0,0,0,1)] mb-10">In Game Shoots</h1>
             </div>
             <div>
             <Swiper

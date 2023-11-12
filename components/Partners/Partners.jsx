@@ -2,22 +2,24 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import useWindowSize from "@/hooks/useWindowSize";
 // Import Swiper styles
 import "swiper/css";
 
 import Image from "next/image";
 
 const Partners = ({ data }) => {
+  const useSize = useWindowSize();
   
   return (
     <div>
       <div className="flex flex-col justify-center items-center text-shadow ">
-        <h1 className="text-white text-5xl text-shdow font-bold font-lexend mb-20">
+        <h1 className="text-white md:text-5xl text-2xl text-shdow font-bold font-lexend mb-20">
           Partners
         </h1>
       </div>
       <Swiper
-        slidesPerView={3.4}
+        slidesPerView={useSize.width > 768 ? 3.5 : 1.5}
         //onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         pagination={{
@@ -50,9 +52,9 @@ const Partners = ({ data }) => {
       ))} */}
         <SwiperSlide className="flex justify-center items-center">
           <div
-            className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
+            className={`bg-white flex justify-center items-center md:h-[10vh] md:w-[20vw] h-[8vh]
           border-2 border-black  transition-all duration-200 ease-in-out
-          rounded-[20px] hover:drop-shadow-none`}
+          md:rounded-[20px] rounded-[10px] mx-2 hover:drop-shadow-none `}
           >
             <Image src={"/images/image13.png"} width={150} height={150} />
           </div>
@@ -60,9 +62,9 @@ const Partners = ({ data }) => {
 
         <SwiperSlide className="flex justify-center items-center">
           <div
-            className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
+            className={`bg-white flex justify-center items-center md:h-[10vh] md:w-[20vw] h-[8vh]
           border-2 border-black  transition-all duration-200 ease-in-out
-          rounded-[20px] hover:drop-shadow-none`}
+          md:rounded-[20px] rounded-[10px] mx-2 hover:drop-shadow-none `}
           >
             <Image src={"/images/image14.png"} width={150} height={150} />
           </div>
@@ -70,9 +72,9 @@ const Partners = ({ data }) => {
         
         <SwiperSlide className="flex justify-center items-center">
           <div
-            className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
+            className={`bg-white flex justify-center items-center md:h-[10vh] md:w-[20vw] h-[8vh]
           border-2 border-black  transition-all duration-200 ease-in-out
-          rounded-[20px] hover:drop-shadow-none `}
+          md:rounded-[20px] rounded-[10px] mx-2 hover:drop-shadow-none `}
           >
             <Image className="p-3" src={"/images/image15.png"} width={150} height={150} />
           </div>
@@ -82,9 +84,9 @@ const Partners = ({ data }) => {
 
         <SwiperSlide className="flex justify-center items-center">
           <div
-            className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
+            className={`bg-white flex justify-center items-center md:h-[10vh] md:w-[20vw] h-[8vh]
           border-2 border-black  transition-all duration-200 ease-in-out
-          rounded-[20px] hover:drop-shadow-none`}
+          md:rounded-[20px] rounded-[10px] mx-2 md:py-0 py-4 hover:drop-shadow-none`}
           >
             <Image src={"/images/castrumB.jpg"} width={150} height={150} />
           </div>
@@ -93,9 +95,9 @@ const Partners = ({ data }) => {
         
         <SwiperSlide className="flex justify-center items-center">
           <div
-            className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
+            className={`bg-white flex justify-center items-center md:h-[10vh] md:w-[20vw] h-[8vh]
           border-2 border-black  transition-all duration-200 ease-in-out
-          rounded-[20px] hover:drop-shadow-none `}
+          md:rounded-[20px] rounded-[10px] mx-2 hover:drop-shadow-none `}
           >
             <Image className="p-4" src={"/images/cryptops4.png"} width={150} height={150} />
           </div>
@@ -103,9 +105,9 @@ const Partners = ({ data }) => {
 
         <SwiperSlide className="flex justify-center items-center">
           <div
-            className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
+            className={`bg-white flex justify-center items-center md:h-[10vh] md:w-[20vw] h-[8vh]
           border-2 border-black  transition-all duration-200 ease-in-out
-          rounded-[20px] hover:drop-shadow-none`}
+          md:rounded-[20px] rounded-[10px] mx-2 hover:drop-shadow-none`}
           >
             <Image src={"/images/beyaz.png"} width={150} height={150} />
           </div>
@@ -113,9 +115,9 @@ const Partners = ({ data }) => {
 
         <SwiperSlide className="flex justify-center items-center">
           <div
-            className={`bg-white flex justify-center items-center h-[10vh] w-[20vw]
+            className={`bg-white flex justify-center items-center md:h-[10vh] md:w-[20vw] h-[8vh]
           border-2 border-black  transition-all duration-200 ease-in-out
-          rounded-[20px] hover:drop-shadow-none`}
+          md:rounded-[20px] rounded-[10px] mx-2 hover:drop-shadow-none`}
           >
             <Image src={"/images/coinvestor.png"} width={150} height={150} />
           </div>
