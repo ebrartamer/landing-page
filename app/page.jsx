@@ -141,7 +141,7 @@ export default function Home() {
       <section>
         <div className="md:mt-[10vh] mt-0">
           <div
-          className="md:top-[960vh] top-[600vh] "
+          className="md:top-[970vh] top-[620vh] "
             style={{
               position: "absolute",
               width: "100%",

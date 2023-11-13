@@ -51,7 +51,7 @@ const Header = () => {
             New Generation GameFi for easy to learn, enjoy and earn
           </p>
         </div>
-        <div className="md:w-1/3 w-[96vw] h-full flex justify-start items-start md:pt-0 pt-16">
+        <div className="md:w-1/3 w-1/3 h-full flex justify-start items-start md:pt-0 pt-16">
           <Image
             src={"/images/human.png"}
             width={220}
